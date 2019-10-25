@@ -1,0 +1,11 @@
+<% include header/ %>
+<h1>yelpcamp</h1>
+
+<% campground.forEach(function(a){ %>
+  <div>
+    <%= a.name %>
+		<img src="<%= a.image %>">
+	</div>
+
+<% }); %>
+<% include footer/ %>
