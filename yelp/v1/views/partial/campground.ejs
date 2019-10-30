@@ -1,0 +1,21 @@
+<% include header/ %>
+ <div class="container">
+     <header class="jumbotron">
+         <h1>welcome to yelpcamp</h1>
+         <p><a class="btn btn-primary btn-lg" href="/nishu/new">Add new campground</a></p>
+      </header>
+      <div class="row text-center">
+         <% campground.forEach(function(a){ %>
+         <div class="col-md-4 col-sm-6">
+             <div class="thumbnail">
+                 <img src="<%= a.image %>">
+                 <div class="caption">
+                    <h4><%= a.name %></h4>
+                  </div>
+               </div>
+          </div>
+         <% }); %>
+      </div>
+
+   </div>
+<% include footer/ %>

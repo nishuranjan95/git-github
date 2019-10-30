@@ -9,7 +9,9 @@
   "author": "nishu",
   "license": "ISC",
   "dependencies": {
+    "body-parse": "^0.1.0",
     "ejs": "^2.7.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongodb": "^3.3.3"
   }
 }
